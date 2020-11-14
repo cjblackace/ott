@@ -166,7 +166,7 @@ select{
 	top: 0;
 	left: 0;
 	right: 0;
-    background-color: #ddd;
+    background-color: #245a91 !important;
     /*background-color: rgba(0, 0, 0, 0.2);*/
     color: #006;
     padding: 1ex;
