@@ -1,6 +1,7 @@
 body {
 	font-family : SanFranciscoText-Regular, Helvetica, Arial, sans-serif;
 	font-weight: 300;
+	backgroundColor: #303030;
 	/*line-height: normal;*/
 	-webkit-text-size-adjust: none;
 }
