@@ -1,0 +1,387 @@
+body {
+	font-family : SanFranciscoText-Regular, Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	/*line-height: normal;*/
+	-webkit-text-size-adjust: none;
+}
+span {
+    cursor: default;
+}
+.modal {
+    position: fixed;
+    padding: 4px;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 100;
+    border-radius: 4px;
+    float: right;
+    display: none;
+}
+.modal_back{
+    position: fixed;
+    left:0; right: 0; top: 0; bottom: 0;
+    z-index: 99;
+    display: none;
+    cursor: default;
+}
+#settings{
+    font-size: 90%;
+	right: 1em;
+    top: 3em;
+}
+#about{
+    font-size: 90%;
+	right: 1em;
+    top: 3em;
+}
+#tv_send{
+	white-space: nowrap;
+    font-size: 150%;
+	text-align: left;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: default;
+}
+#as_set{
+	white-space: nowrap;
+    font-size: 150%;
+	text-align: left;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: default;
+}
+#rec_send{
+	white-space: nowrap;
+    font-size: 150%;
+	text-align: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: default;
+}
+#addFav{
+    font-size: 90%;
+	right: 1em;
+    top: 3em;
+}
+#gEpg{
+    display: inline-block;
+    font-size: 80%;
+}
+#btnSettings{
+    float: right;
+}
+#btnPlayer{
+    display: none;
+}
+select{
+        /*border: none;*/
+        /*border: 0 none black;*/
+        /*border: 0px solid #ABADB3;*/
+        margin: 0;
+        padding: 0;
+}
+#screen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#divVideo {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    float: left;
+    width: 50%;
+}
+
+#divV {
+    width: 1px;
+    height: 100%;
+    float: left;
+    background-color: #ddd;
+}
+
+#divChanels {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#video {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+#videocontrols{
+    background-color: #111;
+    color: #006;
+    padding: 4px 8px;
+}
+#videocontrols .vc{
+    position: relative;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 60%;
+    min-width: 30px;
+    text-align: center;
+    background-color: #ccc;
+    /*color: #444;*/
+    padding: 2px;
+    /*border: 1px solid;*/
+    border-radius: 5px;
+    cursor: pointer;
+}
+#videocontrols .vc:hover {
+    background-color: #aaa;
+}
+#vc-right {
+    float: right;
+}
+
+#videoinfo {
+    padding: 4px;
+}
+#mediainfo {
+    padding: 4px;
+}
+#ch_name{
+    color: #006;
+    font-size: 120%;
+}
+#ch_p{
+    width: 100%;
+    background-color: #ccc;
+    margin: 1ex 0;
+}
+#category {
+	top: 0;
+	left: 0;
+	right: 0;
+    background-color: #ddd;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    color: #006;
+    padding: 1ex;
+}
+
+#favRecords {
+	display: none;
+    top: 0;
+	left: 0;
+	right: 0;
+    background-color: #ddd;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    color: #006;
+    padding: 1ex;
+}
+
+#panel {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cat_sel {
+    max-width: 25%;
+}
+
+#archive {
+    display: none;
+    padding: 4px;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+.channel {
+    display: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 0 0 4px;
+}
+.channel:hover {
+    background-color: #f5f5f5;
+}
+
+.channel.current {
+    background-color: #cdd;
+}
+.current:hover {
+    background-color: #bcc;
+}
+
+.mob_btn{
+    float: right;
+    display: none;
+    /*width: 4em;*/
+    height: 100%;
+    background-color: blue;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bolder;
+    /*font-size: smaller;*/
+    padding: 0 4px;
+}
+.progress_div {
+    float: right;
+    display: table;
+    width: 5%;
+    height: 2.2em;
+    margin: 0 4px 0 0;
+}
+.progress_div.one {
+    height: 1em;
+}
+.progress_cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.progress_bar {
+    background-color: #ccc;
+}
+.c_progress{
+    background-color: #006;
+    height: 1ex;
+}
+
+.div_img {
+    line-height: 2.2em;
+    float: left;
+    margin-right: 4px;
+}
+.div_img.one {
+    line-height: 1em;
+}
+
+.c_img {
+    vertical-align: middle;
+    height: 1.6em;
+    width: 2.65em;
+    padding: .2em 1px;
+    border-radius: .4em;
+    background-color: #006;
+    background-color: rgba(0, 0, 80, 0.8);
+}
+.c_img.one {
+    height: 1em;
+    width: 1.65em;
+    padding: 0;
+    border-radius: 2px;
+}
+
+.c_channel_name {
+    font-weight: bolder;
+    color: #006;
+}
+
+.c_i {
+    color: #006;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 21%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 0 4px 0;
+    padding: 5px 2px;
+    border: 1px solid #006;
+    border-radius: 4px;
+}
+.one.c_i{
+    padding: 2px;
+    border: none;
+    border-radius: 2px;
+}
+.sel.c_i {
+    background-color: #006;
+    background-color: rgba(0, 0, 80, 0.5);
+    color: white;
+}
+.c_arc {
+	color: #600;
+    border: 1px solid #600;
+}
+.sel.c_arc {
+    background-color: #600;
+    background-color: rgba(80, 0, 0, 0.5);
+    color: white;
+}
+#favorite{
+    float: right;
+}
+
+.c_name {
+    font-size: 90%;
+}
+
+.c_info {
+    display: none;
+    white-space: normal;
+    padding: 2px 4px 2px 8px;
+    font-size: 80%;
+    font-weight: bolder;
+}
+
+.c_epg {
+    font-weight: lighter;
+}
+.c_epg_line{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.expand.c_epg_line{
+    white-space: normal;
+}
+.ord.c_epg_line{
+   background-color: #eee;
+}
+.c_epg_descr{
+    font-size: 80%;
+}
+.expand.c_epg_descr{
+    font-size: 100%;
+}
+.pr_name{
+    font-weight: bolder;
+}
+.arh_name{
+    cursor: pointer;
+    color: #006;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.epginfo{
+    display: none;
+    padding: 0 4px;
+    white-space: normal;
+}
+
+.div2 {
+    left: 50px;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 0 0 6ex;
+}
+
+#doArch{
+    width: 100%;
+}
+#archive_etalon{
+    display: none;
+}
+#media_etalon{
+    display: none;
+}
